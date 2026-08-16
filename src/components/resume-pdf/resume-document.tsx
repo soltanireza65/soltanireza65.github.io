@@ -34,14 +34,14 @@ const styles = StyleSheet.create({
   },
   name: {
     fontFamily: 'Oswald',
-    fontSize: 24,
+    fontSize: 14,
     color: heading,
     // marginBottom: 2,
     // lineHeight: 1.6,
   },
   headline: {
     fontFamily: 'Oswald',
-    fontSize: 14,
+    fontSize: 20,
     color: dark,
     // marginBottom: 8,
     // lineHeight: 1,
@@ -280,8 +280,8 @@ export function ResumeDocument() {
     <Document title={`${resume.name} — Resume`} author={resume.name}>
       <Page size="A4" style={styles.page}>
         <View wrap={false} style={styles.header}>
-          <Text style={styles.name}>{resume.name}</Text>
           <Text style={styles.headline}>{resume.title}</Text>
+          <Text style={styles.name}>{resume.name}</Text>
           <ContactRow />
         </View>
 
